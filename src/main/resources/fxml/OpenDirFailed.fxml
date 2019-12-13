@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="177.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.staroon.filezilla.gui.controller.OpenDirFailedController">
+    <children>
+        <GridPane alignment="CENTER" layoutY="33.0" prefHeight="151.0" prefWidth="420.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="打开Filzilla Server安装目录失败。" textAlignment="CENTER" wrapText="true"/>
+                <Label text="可能是由于未将FileZilla Server安装至默认目录" GridPane.rowIndex="1"/>
+                <Label text="需要手动寻找安装目录。" GridPane.rowIndex="3"/>
+                <Label text="（C:\Program Files (x86)\FileZilla Server 中文版）下，" GridPane.rowIndex="2"/>
+                <Button fx:id="exit" mnemonicParsing="false" onAction="#toExit" text=" 确 定 " GridPane.rowIndex="4"/>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
