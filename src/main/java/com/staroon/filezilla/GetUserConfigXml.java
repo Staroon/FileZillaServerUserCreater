@@ -148,10 +148,10 @@ public class GetUserConfigXml {
                     break;
                 } else {
 //                    System.out.println(row.getCell(1).toString() + "+++");
-                    user.setUnitName(getCellFormatValue(row.getCell(1)));// 单位名称
+                    user.setUnitName(getCellFormatValue(row.getCell(1)));// 文件夹名称
                     user.setFtpAccount(getCellFormatValue(row.getCell(2)));// FTP账号
                     user.setFtpPassword(getCellFormatValue(row.getCell(3)));// FTP密码
-                    user.setRegion(getCellFormatValue(row.getCell(4)));// 所属区域
+                    user.setRegion(getCellFormatValue(row.getCell(4)));// 文件夹分组
                     user.setFtpDir(ftpHome + user.getRegion() + "\\\\" + user.getUnitName());
                     user.setMd5Password(Md5Util.getMd5(user.getFtpPassword()));
                 }
